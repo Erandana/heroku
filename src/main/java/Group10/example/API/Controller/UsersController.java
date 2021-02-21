@@ -207,7 +207,7 @@ public class UsersController {
     @GetMapping(value = "student/getdetailsfromsession")
     public Result getDetailsFromSession(){
         Student s = getStudentFromSession();
-        return (s == null)?null:new Result(s.getStudentID(),s.getFirstName(),s.getRegNumber());
+        return (s == null)?null:new Result(s.getStudentID(),s.getFirstName(),s.getRegNumber(),s.getLastName());
     }
 
     public String getUserName(){
