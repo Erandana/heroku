@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: Group10.example.API.Controller.AdminControllerIntTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 2.709 s <<< FAILURE! - in Group10.example.API.Controller.AdminControllerIntTest
+addNewStudent  Time elapsed: 0.555 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200> but was: <401>
+	at Group10.example.API.Controller.AdminControllerIntTest.addNewStudent(AdminControllerIntTest.java:42)
+
+addNewLecturer  Time elapsed: 0.015 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200> but was: <401>
+	at Group10.example.API.Controller.AdminControllerIntTest.addNewLecturer(AdminControllerIntTest.java:53)
+
