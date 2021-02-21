@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: Group10.example.API.Controller.CourseControllerTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 3, Errors: 1, Skipped: 0, Time elapsed: 0.07 s <<< FAILURE! - in Group10.example.API.Controller.CourseControllerTest
+addLogItem  Time elapsed: 0.005 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200> but was: <401>
+	at Group10.example.API.Controller.CourseControllerTest.addLogItem(CourseControllerTest.java:65)
+
+addScheduleItem  Time elapsed: 0.005 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200> but was: <401>
+	at Group10.example.API.Controller.CourseControllerTest.addScheduleItem(CourseControllerTest.java:80)
+
+addCourse  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200> but was: <401>
+	at Group10.example.API.Controller.CourseControllerTest.addCourse(CourseControllerTest.java:52)
+
+getCourses  Time elapsed: 0.005 s  <<< ERROR!
+org.springframework.web.client.RestClientException: 
+Error while extracting response for type [class [LGroup10.example.API.Model.Course;] and content type [application/json]; nested exception is org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize instance of `[LGroup10.example.API.Model.Course;` out of START_OBJECT token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `[LGroup10.example.API.Model.Course;` out of START_OBJECT token
+ at [Source: (PushbackInputStream); line: 1, column: 1]
+	at Group10.example.API.Controller.CourseControllerTest.getCourses(CourseControllerTest.java:34)
+Caused by: org.springframework.http.converter.HttpMessageNotReadableException: 
+JSON parse error: Cannot deserialize instance of `[LGroup10.example.API.Model.Course;` out of START_OBJECT token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `[LGroup10.example.API.Model.Course;` out of START_OBJECT token
+ at [Source: (PushbackInputStream); line: 1, column: 1]
+	at Group10.example.API.Controller.CourseControllerTest.getCourses(CourseControllerTest.java:34)
+Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: 
+Cannot deserialize instance of `[LGroup10.example.API.Model.Course;` out of START_OBJECT token
+ at [Source: (PushbackInputStream); line: 1, column: 1]
+	at Group10.example.API.Controller.CourseControllerTest.getCourses(CourseControllerTest.java:34)
+
