@@ -100,8 +100,8 @@ public class UsersController {
 
         //check whether user is already exists
         if(stud != null) {
-            map.put("msg","user Name is already exists Try with different one");
-            return map;
+             map.put("msg","user Name is already exists");
+             return map;
         }
 
         student.setRole("STUDENT");
